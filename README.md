@@ -7,11 +7,15 @@
 
 const : 상수 선언
 let : 변수 선언
+
+<br><br>
  
 ### 문자열
 
 "" , '' : 단순 문자열
 `` : 표현식 가능 문자열 (ex : const message = `나는 ${30+1}살 입니다.`)
+
+<br><br>
 
 ### typeof 연산자
 
@@ -21,41 +25,56 @@ const name = 'mike'
 console.log(typeof name) // String 출력
 ```
 
+<br><br>
+
 ### alert, prompt, confirm
 
-alert : 메시지를 보여주는 창
-prompt : 값을 입력받는 창 (문자열 입력)
-confirm : 확인을 받는 창
+alert : 메시지를 보여주는 창<br>
+prompt : 값을 입력받는 창 (문자열 입력)<br>
+confirm : 확인을 받는 창<br>
+
+<br><br>
 
 ### 형변환(명시적 형변환)
 
-String(X) :  X -> 문자열
-Number(X) : X -> 숫자형 (X에 글자가 들어가면 NaN 반환)
+String(X) :  X -> 문자열<br>
+Number(X) : X -> 숫자형 (X에 글자가 들어가면 NaN 반환)<br><br>
 
-Number(null) -> 0
-Number(undefined) -> NaN
+Number(null) -> 0 <br>
+Number(undefined) -> NaN<br><br>
 
-Boolean(X) : X -> boolean형 (0,‘’, null, undefined, NaN -> false / 그 외 -> true)
+Boolean(X) : X -> boolean형 (0,‘’, null, undefined, NaN -> false / 그 외 -> true)<br>
+
+
+<br><br>
 
 ### 비교 연산자
 
-== (동등 연산자) : 두 값이 같은지 비교
-=== (일치 연산자) : 두 값과 타입까지 비교
+== (동등 연산자) : 두 값이 같은지 비교<br>
+=== (일치 연산자) : 두 값과 타입까지 비교<br>
+
+
+<br><br>
 
 ### function
 
-function(name = ‘friend’){} -> 매개변수 default 값
-return이 없어도 undefined를 반환
+function(name = ‘friend’){} -> 매개변수 default 값<br>
+return이 없어도 undefined를 반환<br>
+
+
+<br><br>
 
 ### 함수 표현식
 
-코드에 도달하면 생성
+코드에 도달하면 생성<br>
 
 ```javascript
 
 let sayHello = function(){}
 sayHello();
 ```
+
+<br><br>
 
 ### 화살표 함수
 
@@ -69,9 +88,13 @@ let sayHello = (name) => {
 let add = (num1, num2) => num1 + num2;
 ```
 
+<br><br>
+
 ### 호이스팅(hoisting)
 
 초기화 단계에서 모든 함수의 선언문을 생성 -> 어디서든 호출 가능
+
+<br><br>
 
 ### Object
 
@@ -85,11 +108,13 @@ const superman = {
   console.log(‘날아갑니다.’) 
  }
 }
-```
+```<br><br>
 
-접근 : superman.name / superman[‘age’]
-추가 : superman.gender = ‘male’ / superman[‘hairColor’] = ‘black’
-삭제 : delete superman.hairColor;
+접근 : superman.name / superman[‘age’]<br>
+추가 : superman.gender = ‘male’ / superman[‘hairColor’] = ‘black’<br>
+삭제 : delete superman.hairColor;<br>
+
+<br><br>
 
 ```javascript
 
@@ -98,7 +123,10 @@ const superman = {
 if (‘age’ in user){
 
 }
-```
+```<br>
+
+
+<br><br>
 
 ### Array
 
@@ -123,6 +151,8 @@ for (let day of days){
 }
 ```
 
+
+<br><br>
 
 ## 참고 사이트
 
