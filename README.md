@@ -13,8 +13,7 @@ let : 변수 선언<br>
 
 "" , '' : 단순 문자열<br>
 `` : 표현식 가능 문자열 (ex : const message = `나는 ${30+1}살 입니다.`)<br>
-
-<br><br>
+<br>
 
 ### typeof 연산자
 
@@ -23,7 +22,6 @@ let : 변수 선언<br>
 const name = 'mike'
 console.log(typeof name) // String 출력
 ```
-
 <br>
 
 ### alert, prompt, confirm
@@ -43,22 +41,18 @@ Number(null) -> 0 <br>
 Number(undefined) -> NaN<br><br>
 
 Boolean(X) : X -> boolean형 (0,‘’, null, undefined, NaN -> false / 그 외 -> true)<br>
-
-
 <br>
 
 ### 비교 연산자
 
 == (동등 연산자) : 두 값이 같은지 비교<br>
 === (일치 연산자) : 두 값과 타입까지 비교<br>
-
 <br>
 
 ### function
 
 function(name = ‘friend’){} -> 매개변수 default 값<br>
 return이 없어도 undefined를 반환<br>
-
 <br>
 
 ### 함수 표현식
@@ -70,7 +64,6 @@ return이 없어도 undefined를 반환<br>
 let sayHello = function(){}
 sayHello();
 ```
-
 <br>
 
 ### 화살표 함수
@@ -84,13 +77,11 @@ let sayHello = (name) => {
 
 let add = (num1, num2) => num1 + num2;
 ```
-
 <br>
 
 ### 호이스팅(hoisting)
 
 초기화 단계에서 모든 함수의 선언문을 생성 -> 어디서든 호출 가능
-
 <br>
 
 ### Object
@@ -105,12 +96,12 @@ const superman = {
   console.log(‘날아갑니다.’) 
  }
 }
-```<br>
+```
+<br>
 
 접근 : superman.name / superman[‘age’]<br>
 추가 : superman.gender = ‘male’ / superman[‘hairColor’] = ‘black’<br>
 삭제 : delete superman.hairColor;<br>
-
 <br>
 
 ```javascript
@@ -120,7 +111,7 @@ const superman = {
 if (‘age’ in user){
 
 }
-```<br>
+```
 <br>
 
 ### Array
