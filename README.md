@@ -114,6 +114,35 @@ if (‘age’ in user){
 ```
 <br>
 
+### Object 함수
+
+```javascript
+
+Object.assign() // 객체 복제
+
+const newUser = Object.assign({}, user); // 빈 객체에 복사
+
+const user = {
+ name : ‘Mike’
+}
+
+const info1 = {
+ age : 30
+}
+
+const info2 = {
+ gender : ‘maie’
+}
+
+Object.assign(user, info1, info2) // user에 info1, info2 합치기
+
+Object.keys(user) // 키 배열 반환
+Object.values(user) // 값 배열 반환
+Object.entries(user) // 키/값 배열 반환
+```
+<br>
+
+
 ### Array
 
 ```javascript
@@ -135,6 +164,79 @@ for (let index = 0 ; index < days.length; index++){
 for (let day of days){
  console.log(day)
 }
+```
+<br>
+
+### Symbol
+
+유일성을 보장하는 자료형<br>
+객체에서 외부로 보이지 않음<br>
+
+```javascript
+
+const id = Symbol(‘id’)
+const user = {
+ name : ‘mike’,
+ age : 30,
+ [id] : ‘myid’
+} 
+// id는 외부에서 안보임 (Object.keys, Object.values 등등)
+
+Symbol.for() // 전역 심볼
+
+// -> 하나의 심볼만 보장받을 수 있음 (하나로 공유)
+```
+<br>
+
+### 숫자, 수학 method
+
+유일성을 보장하는 자료형<br>
+객체에서 외부로 보이지 않음<br>
+
+toString()
+
+```javascript
+
+toString()
+
+// 10진수 -> 2진수 / 16진수
+
+let num = 10;
+
+num.toString(); // ‘10’으로 변환
+num.toString(2); // ‘1010’으로 변환 (2진수)
+num.toString(16); // 16진수로 변환
+```
+
+Math
+
+```javascript
+
+
+Math.ceil() // 올림
+Math.floor() // 내림
+Math.round() // 반올림
+
+let userRate = 30.1234
+userRate.toFixed(n) // 소수점 n째자리 까지 표현 (문자열 반환)
+// -> Number(userRate.toFixed(n))
+
+isNaN(x) // x가 NaN인지 판단
+
+parseInt() 
+parseFloat()
+// 숫자가 섞인 문자를 Number로 변환 (숫자가 앞에 있어야 함)
+
+let margin = ‘10px’
+parseInt(margin) // 10
+parseInt(margin,2) // 10을 2진수로 변환해서 반환
+
+Math.random() // 0~1 사이 무작위 숫자 생성
+Math.max() // 최대값
+Math.min() // 최솟값
+Math.abs() // 절대값
+Math.pow(n,m) // 제곱 (n^m)
+Math.sqrt() // 제곱근
 ```
 <br>
 
