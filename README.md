@@ -190,9 +190,6 @@ Symbol.for() // 전역 심볼
 
 ### 숫자, 수학 method
 
-유일성을 보장하는 자료형<br>
-객체에서 외부로 보이지 않음<br>
-
 toString()
 
 ```javascript
